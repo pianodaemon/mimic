@@ -1,0 +1,37 @@
+{
+   "mimic_profile": {
+      "ctrl": {
+         "kb": {
+             "selected": {
+                "mod_params": [
+                   {
+                      "name": "pem_port",
+                      "value": "/dev/hidg0"
+                   },
+                   {
+                      "name": "serial_bauds",
+                      "value": "115200"
+                   }
+                ],
+                "mod_name": "bbbkb"
+             }
+         },
+         "ps": {
+             "selected": {
+                "mod_params": [
+                   {
+                      "name": "gpio_pin",
+                      "value": "gpio60"
+                   },
+                   {
+                      "name": "gpio_noc",
+                      "value": "1"
+                   }
+                ],
+                "mod_name": "bbbgpio"
+             },
+             "slot": "1"
+         }
+      }
+   }
+}

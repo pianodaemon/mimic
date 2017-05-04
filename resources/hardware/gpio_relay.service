@@ -1,0 +1,15 @@
+# This file should will be copied into "/etc/systemd/system"
+# once you're done, enable the service:
+# systemctl enable gpio_relay.service
+
+[Unit]
+Description=Enable bbb gpio relay
+
+[Service]
+Type=oneshot
+ExecStart=/abft/resources/hardware/gpio_relay.sh enable
+ExecStop=/abft/resources/hardware/gpio_relay.sh disable
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
